@@ -26,3 +26,4 @@ function secondLogos(){
     secondUl.append(li)
 }
 secondLogos()
+
