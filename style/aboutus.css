@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root{
+    --primary-green: #227A25;
+    --secondary-green: #7bc07d;
+    --third-green:#477A49;
+    --black-100:#261F22;
+    --black-75:#534e50;
+    --black-50:#807c73;
+    --black-25:#acabab;
+    --black-10:#dfdfdf;
+    --font-sizeXl:5.653rem;
+    --font-sizeL:3.998rem;
+    --font-sizeM:2.827rem;
+    --font-sizeS:1.999rem;
+    --font-sizeES:1.414rem;
+    --font-sizeXS:1rem;
+}
+body{
+    background-color: var(--black-10);
+}
+
+div header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third-green);
+}
+div header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+}
+div header nav img{
+    width: 6rem;
+    height: 4rem;
+    margin-bottom: .3rem;
+    object-fit: cover;
+}
+div header nav a{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 1rem 2rem;
+    font-size:var(--font-sizeXS);
+    background-color: var(--secondary-green);
+    border-radius: 2rem;
+    padding: .4rem .8rem;
+    color: #f4f4f4;
+    transition: .3s;
+}
+        div header nav a:hover{
+            opacity: 0.8;
+        }
+
+
+
+
+
+div header aside{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 6vh;
+}
+div header aside ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+div header aside li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #f4f4f4;
+}
+        div header aside li a{
+            color: #f4f4f4;
+            transition: 0.8s;
+        }
+        div header aside li a:hover{
+            opacity: 0.5;
+        }
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+            .contenido li{
+                display: flex;
+                gap: 1rem;
+            }
+                .contenido li i{
+                    transition: 0.8s;
+                    cursor: pointer;
+                }   
+                        .contenido li i:hover{
+                            opacity: 0.5;
+                        }   
+                        
+div main img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+div main{
+    background-image: url(../imagenes/aboutusImg/helpus.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        div main h1{
+            color: var(--black-10);
+            transition: .3s;
+            cursor: pointer;
+        }
+                    div main h1:hover{
+                        opacity: .8;
+                    }
+
+                                            /*ASIDE*/
+
+
+article{
+    background-color: var(--third-green);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+}                
+article h1{
+    position: absolute;
+    top: 5%;
+    text-transform: capitalize;
+    color: var(--black-10);
+}                    
+article p{
+    color: var(--black-10);
+    min-width: 20rem;
+    max-width: 40rem;
+    text-align: left;
+}                    
+                                            /*SECTION*/
+
+section{
+    background-color: var(--black-10);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+}                
+section h1{
+    position: absolute;
+    top: 5%;
+    text-transform: capitalize;
+    color: var(--third-green);
+}                    
+section p{
+    color: var(--third-green);
+    min-width: 20rem;
+    max-width: 40rem;
+    text-align: left;
+}                                               
+                                            
+                                            /*FOOTER END*/
+
+.end{
+    background-color: var(--black-10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+            .end-contImg img{
+                width: 5rem;
+                height: 5rem;
+                object-fit: cover;
+            }    
+                    .end-contImg{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        color: var(--black-75);
+                        justify-content: center;
+                    }
+
+                    .end ul li i:hover{
+                        color: #000;
+                    }    
+                    .end ul li i:hover{
+                        opacity: .8;
+                    }                                            

@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root{
+    --primary-green: #227A25;
+    --secondary-green: #7bc07d;
+    --third-green:#477A49;
+    --black-100:#261F22;
+    --black-75:#534e50;
+    --black-50:#807c73;
+    --black-25:#acabab;
+    --black-10:#dfdfdf;
+    --font-sizeXl:5.653rem;
+    --font-sizeL:3.998rem;
+    --font-sizeM:2.827rem;
+    --font-sizeS:1.999rem;
+    --font-sizeES:1.414rem;
+    --font-sizeXS:1rem;
+}
+body{
+    background-color: var(--black-10);
+}
+
+div header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third-green);
+}
+div header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    border-bottom: 1px solid black;
+}
+div header nav img{
+    width: 6rem;
+    height: 4rem;
+    margin-bottom: .3rem;
+    object-fit: cover;
+}
+div header nav a{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 1rem 2rem;
+    font-size:var(--font-sizeXS);
+    background-color: var(--secondary-green);
+    border-radius: 2rem;
+    padding: .4rem .8rem;
+    color: #f4f4f4;
+    transition: .3s;
+}
+        div header nav a:hover{
+            opacity: 0.8;
+        }
+
+
+
+
+
+div header aside{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 6vh;
+}
+div header aside ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+div header aside li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #f4f4f4;
+}
+        div header aside li a{
+            color: #f4f4f4;
+            transition: 0.8s;
+        }
+        div header aside li a:hover{
+            opacity: 0.5;
+        }
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+        .contenido li{
+            display: flex;
+            gap: 1rem;
+        }
+            .contenido li i{
+                transition: 0.8s;
+                cursor: pointer;
+            }   
+                    .contenido li i:hover{
+                        opacity: 0.5;
+                    }   
+        
+                                            /*MAIN*/
+
+main{
+    background-color: var(--black-10);
+    width: 100%;
+}      
+.contenedor{
+    width: 80%;
+    background-color: var(--black-10);
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}   
+    .contenedor .title h1{
+        color: var(--third-green);
+        font-size: var(--font-sizeL);
+    }
+            .contenedor .search{
+                
+                display: flex;
+                justify-content: space-between;
+                color: var(--black-100);
+            }
+                    .contenedor .search .logearse{
+                        display: flex;
+                        gap: 1.5rem;
+                        text-transform: uppercase;
+                    }
+                    .contenedor .search .logearse a{
+                        color: var(--black-100);
+                        border: 1px solid var(--black-100);
+                    }
+
+
+                                                    /*ASIDE*/
+
+article{
+    background-color: #7bc07d;
+    width: 100%; 
+}
+        article .contenedor{
+            background-color: var(--black-10);
+            width: 80%;
+            margin: 3rem auto;
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+        }                      
+                    
+        .contenedorImg{
+            width: 50%;
+            background-color: #227A25;
+        }
+                .contenedorImg img{
+                    width: 100%;
+                    height: 24rem;
+                    object-fit: cover;
+                }
+        .second-contenedor{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+                .contenedorCont{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                        .contenedorCont-first{
+                            display: flex;
+                            align-items: center;
+                        }
+                                .hijo-second{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    font-size: .9rem;
+                                    color: var(--black-100);
+                                }
+
+.contenedor-title{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+        .contenedor-title h1{
+            text-align: start;
+            color: var(--black-75);
+        }
+        .contenedor-title p{
+            text-align: start;
+            color: var(--black-75);
+        }
+
+.contenedor-third{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor-third div{
+   display: flex;
+   align-items: center;
+}
+
+                                            /*FOOTER END*/
+
+.end{
+    background-color: var(--black-10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+            .end-contImg img{
+                width: 5rem;
+                height: 5rem;
+                object-fit: cover;
+            }    
+                    .end-contImg{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        color: var(--black-75);
+                        justify-content: center;
+                    }
+
+                    .end ul li i:hover{
+                        color: #000;
+                    }    
+                    .end ul li i:hover{
+                        opacity: .8;
+                    }                                                                                        
